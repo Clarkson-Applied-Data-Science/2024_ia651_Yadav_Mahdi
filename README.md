@@ -8,4 +8,5 @@
 * We will be using all these features to predict whether the borrower is likely to delinquent in the next 2 years or not.
 * These kind of predictions will help banks to take necessary actions.
 
+***
 * **Objective** : Building a model using the inputs/attributes which are general profile and historical records of a borrower to predict whether one is likely to have serious delinquency in the next 2 years 
