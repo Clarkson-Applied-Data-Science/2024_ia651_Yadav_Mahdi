@@ -187,12 +187,41 @@ y = df['SeriousDlqin2yrs']
 
 ### Revolving Utilization Of Unsecured Lines
 
+
+```python
+plot_hist_boxplot('RevolvingUtilizationOfUnsecuredLines')
+
+
 ![Revolving Utilization Of Unsecured Lines Histogram and Boxplot](RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png)
+
 
 skewness :  100.53820302006339
 kurtosis :  15559.574874151434
 
+```python
+plot_hist_boxplot('RevolvingUtilizationOfUnsecuredLines')
+
+skewness :  100.53820302006339
+kurtosis :  15559.574874151434
+
+
 plot_hist_boxplot('NumberOfTime60-89DaysPastDueNotWorse')
+
+skewness :  23.393598377179494
+kurtosis :  548.632426633495
+
+
+plot_hist_boxplot('NumberOfTimes90DaysLate')
+
+skewness :  23.155584699487473
+kurtosis :  540.8745184818808
+
+
+plot_hist_boxplot('NumberOfOpenCreditLinesAndLoans')
+skewness :  1.2145900828310415
+kurtosis :  3.1146863668427803
+
+
 
 
 
