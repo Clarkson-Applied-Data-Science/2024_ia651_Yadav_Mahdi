@@ -169,8 +169,6 @@
 
 
 
-### Separating the dataset into train-test split
-
 
 ## Separating the Dataset into Train-Test Split
 
@@ -203,5 +201,6 @@ plot_hist_boxplot('NumberOfTimes90DaysLate')
 skewness :  23.155584699487473
 kurtosis :  540.8745184818808
 
+plot_hist_boxplot('NumberOfOpenCreditLinesAndLoans')
 
 
