@@ -192,5 +192,7 @@ y = df['SeriousDlqin2yrs']
 skewness :  100.53820302006339
 kurtosis :  15559.574874151434
 
+plot_hist_boxplot('NumberOfTime60-89DaysPastDueNotWorse')
+
 
 
