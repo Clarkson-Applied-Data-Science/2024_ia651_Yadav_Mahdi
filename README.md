@@ -164,3 +164,23 @@
   </tbody>
 </table>
 </div>
+
+
+
+
+
+### Separating the dataset into train-test split
+
+
+## Separating the Dataset into Train-Test Split
+
+```python
+X = df.drop(columns = ['SeriousDlqin2yrs'], axis=1)
+y = df['SeriousDlqin2yrs']
+```
+
+
+## Separating the Dataset into Train-Test Split
+
+
+
