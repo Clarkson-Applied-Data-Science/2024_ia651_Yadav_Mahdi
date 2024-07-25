@@ -1,4 +1,4 @@
-* **Business Context** - Banks are primarily known for money lending business. The more money they lend to people whom they can get good interest with timely repayment, the more revenue is for the banks.
+### Business Context - Banks are primarily known for money lending business. The more money they lend to people whom they can get good interest with timely repayment, the more revenue is for the banks.
 * **
 * The more banks are able to identify borrowers going towards serious delinquency rate, the better will be the bank's money lending business which in turn will lead to better revenue and better image in the market and with respect to competitiors. 
 * **
@@ -13,14 +13,154 @@
 
 
 
-<pre><code class="python">print(df['SeriousDlqin2yrs'].unique())
-percentage_Serious_Deliquency = (df['SeriousDlqin2yrs']).sum()/ len(df) * 100
-print('{}% of the borrrowers are failing in Serious Delinquency'.format(percentage_Serious_Deliquency))</code></pre>
+## Data Analysis: 
 
-<p>[1 0]
+
+### SeriousDlqin2yrs Count Plot:
+![SeriousDlqin2yrs Count Plot](SeriousDlqin2yrs_countplot.png)
+
+### Explanation:
+- The pie chart on the left shows the proportion of borrowers who have and haven't experienced serious delinquency in the past two years.
+- The count plot on the right shows the count of borrowers in each category of serious delinquency.
+- The pie chart uses two colors, sky blue for 'No' and light green for 'Yes', with the 'Yes' slice exploded slightly for emphasis.
+- The count plot is generated using the Seaborn library for a simple and clear representation of the count of each category.
+
 6.683999999999999% of the borrrowers are failing in Serious Delinquency</p>
 
 
-## Data Analysis: Serious Delinquency in 2 Years
+## Dataset Statistical Distribution
 
 
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SeriousDlqin2yrs</th>
+      <th>RevolvingUtilizationOfUnsecuredLines</th>
+      <th>age</th>
+      <th>NumberOfTime30-59DaysPastDueNotWorse</th>
+      <th>DebtRatio</th>
+      <th>MonthlyIncome</th>
+      <th>NumberOfOpenCreditLinesAndLoans</th>
+      <th>NumberOfTimes90DaysLate</th>
+      <th>NumberRealEstateLoansOrLines</th>
+      <th>NumberOfTime60-89DaysPastDueNotWorse</th>
+      <th>NumberOfDependents</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>150000.000000</td>
+      <td>150000.000000</td>
+      <td>150000.000000</td>
+      <td>150000.000000</td>
+      <td>150000.000000</td>
+      <td>1.202690e+05</td>
+      <td>150000.000000</td>
+      <td>150000.000000</td>
+      <td>150000.000000</td>
+      <td>150000.000000</td>
+      <td>146076.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.066840</td>
+      <td>6.048438</td>
+      <td>52.295207</td>
+      <td>0.421033</td>
+      <td>353.005076</td>
+      <td>6.670221e+03</td>
+      <td>8.452760</td>
+      <td>0.265973</td>
+      <td>1.018240</td>
+      <td>0.240387</td>
+      <td>0.757222</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.249746</td>
+      <td>249.755371</td>
+      <td>14.771866</td>
+      <td>4.192781</td>
+      <td>2037.818523</td>
+      <td>1.438467e+04</td>
+      <td>5.145951</td>
+      <td>4.169304</td>
+      <td>1.129771</td>
+      <td>4.155179</td>
+      <td>1.115086</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000e+00</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</th>
+      <td>0.000000</td>
+      <td>0.029867</td>
+      <td>41.000000</td>
+      <td>0.000000</td>
+      <td>0.175074</td>
+      <td>3.400000e+03</td>
+      <td>5.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.000000</td>
+      <td>0.154181</td>
+      <td>52.000000</td>
+      <td>0.000000</td>
+      <td>0.366508</td>
+      <td>5.400000e+03</td>
+      <td>8.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>0.000000</td>
+      <td>0.559046</td>
+      <td>63.000000</td>
+      <td>0.000000</td>
+      <td>0.868254</td>
+      <td>8.249000e+03</td>
+      <td>11.000000</td>
+      <td>0.000000</td>
+      <td>2.000000</td>
+      <td>0.000000</td>
+      <td>1.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.000000</td>
+      <td>50708.000000</td>
+      <td>109.000000</td>
+      <td>98.000000</td>
+      <td>329664.000000</td>
+      <td>3.008750e+06</td>
+      <td>58.000000</td>
+      <td>98.000000</td>
+      <td>54.000000</td>
+      <td>98.000000</td>
+      <td>20.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
