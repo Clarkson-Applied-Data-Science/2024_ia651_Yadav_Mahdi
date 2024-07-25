@@ -199,7 +199,7 @@ kurtosis :  15559.574874151434
 skewness :  23.393598377179494
 kurtosis :  548.632426633495
 
-![NumberOfTime30-59DaysPastDueNotWorse_hist_boxplot.png](NumberOfTime30-59DaysPastDueNotWorse_hist_boxplot.png)
+![hist_boxplot_30_59.png](hist_boxplot_30_59.png.)
 
 skewness :  22.560050047962374
 kurtosis :  520.586140091868
