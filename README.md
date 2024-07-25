@@ -179,8 +179,29 @@ X = df.drop(columns = ['SeriousDlqin2yrs'], axis=1)
 y = df['SeriousDlqin2yrs']
 ```
 
+## Shape of Train Dataset , Test Dataset
+ ###   (120000, 11) , (30000, 11)
 
-## Separating the Dataset into Train-Test Split
+
+### Univariate Analysis using Training Numerical dataset
+
+## Univariate Analysis using Training Numerical Dataset
+
+### Revolving Utilization Of Unsecured Lines
+
+![Revolving Utilization Of Unsecured Lines Histogram and Boxplot](RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png)
+
+skewness :  100.53820302006339
+kurtosis :  15559.574874151434
+
+plot_hist_boxplot('NumberOfTime60-89DaysPastDueNotWorse')
+skewness :  23.393598377179494
+kurtosis :  548.632426633495
+
+
+plot_hist_boxplot('NumberOfTimes90DaysLate')
+skewness :  23.155584699487473
+kurtosis :  540.8745184818808
 
 
 
