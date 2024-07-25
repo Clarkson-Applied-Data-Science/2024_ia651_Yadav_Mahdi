@@ -276,4 +276,11 @@ kurtosis :  540.8745184818808
 </table>
 </div>
 
+* * Data distribution in the columns are highly right skewed with very high kurtosis value showing extreme outliers in those columns
+* * Except age which is little normally distributed
 
+* *From the above boxplot graphs we can observe:*
+* **
+* *In the columns NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate, we see delinquency range beyond 90 which is common across all 3 features.*
+* **
+* *Treating outliers for the columns  -- NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate*
