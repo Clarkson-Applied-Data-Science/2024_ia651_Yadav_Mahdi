@@ -194,17 +194,18 @@ skewness :  100.53820302006339
 kurtosis :  15559.574874151434
 
 
-![NumberOfTime60-89DaysPastDueNotWorse_hist_boxplot.png](NumberOfTime60-89DaysPastDueNotWorse_hist_boxplot.png)
-
-skewness :  23.393598377179494
-kurtosis :  548.632426633495
-
 ![hist_boxplot_30_59.png](hist_boxplot_30_59.png)
 
 skewness :  22.560050047962374
 kurtosis :  520.586140091868
 
-![NumberOfTime90DaysLATE_hist_boxplot.png](NumberOfTime90DaysLATE_hist_boxplot.png)
+
+![hist_boxplot_60_89.png](hist_boxplot_60_89.png)
+
+skewness :  23.393598377179494
+kurtosis :  548.632426633495
+
+![hist_boxplot_90.png](hist_boxplot_90.png)
 
 skewness :  23.155584699487473
 kurtosis :  540.8745184818808
