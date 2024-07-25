@@ -284,3 +284,63 @@ kurtosis :  540.8745184818808
 * *In the columns NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate, we see delinquency range beyond 90 which is common across all 3 features.*
 * **
 * *Treating outliers for the columns  -- NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate*
+
+
+
+
+
+```python
+print("Unique values in '30-59 Days' values that are more than or equal to 90:",np.unique(train[train['NumberOfTime30-59DaysPastDueNotWorse']>=90]
+                                                                                          ['NumberOfTime30-59DaysPastDueNotWorse']))
+
+
+print("Unique values in '60-89 Days' when '30-59 Days' values are more than or equal to 90:",np.unique(train[train['NumberOfTime30-59DaysPastDueNotWorse']>=90]
+                                                                                                       ['NumberOfTime60-89DaysPastDueNotWorse']))
+
+
+print("Unique values in '90 Days' when '30-59 Days' values are more than or equal to 90:",np.unique(train[train['NumberOfTime30-59DaysPastDueNotWorse']>=90]
+                                                                                                    ['NumberOfTimes90DaysLate']))
+
+
+print("Unique values in '30-59 Days' values that are less than 90:",np.unique(train[train['NumberOfTime30-59DaysPastDueNotWorse']<90]
+                                                                                          ['NumberOfTime30-59DaysPastDueNotWorse']))
+
+
+print("Unique values in '60-89 Days' when '30-59 Days' values are less than 90:",np.unique(train[train['NumberOfTime30-59DaysPastDueNotWorse']<90]
+                                                                                           ['NumberOfTime60-89DaysPastDueNotWorse']))
+
+
+print("Unique values in '90 Days' when '30-59 Days' values are less than 90:",np.unique(train[train['NumberOfTime30-59DaysPastDueNotWorse']<90]
+                                                                                        ['NumberOfTimes90DaysLate']))
+
+
+print("Proportion of positive class with special 96/98 values:",
+      round(train[train['NumberOfTime30-59DaysPastDueNotWorse']>=90]['SeriousDlqin2yrs'].sum()*100/
+      len(train[train['NumberOfTime30-59DaysPastDueNotWorse']>=90]['SeriousDlqin2yrs']),2),'%')
+```
+
+    Unique values in '30-59 Days' values that are more than or equal to 90: [96 98]
+    Unique values in '60-89 Days' when '30-59 Days' values are more than or equal to 90: [96 98]
+    Unique values in '90 Days' when '30-59 Days' values are more than or equal to 90: [96 98]
+    Unique values in '30-59 Days' values that are less than 90: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13]
+    Unique values in '60-89 Days' when '30-59 Days' values are less than 90: [ 0  1  2  3  4  5  6  7  8  9 11]
+    Unique values in '90 Days' when '30-59 Days' values are less than 90: [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 17]
+    Proportion of positive class with special 96/98 values: 54.67 %
+
+
+
+```python
+train.loc[train['NumberOfTime30-59DaysPastDueNotWorse'] >= 90, 'NumberOfTime30-59DaysPastDueNotWorse'] = 12
+train.loc[train['NumberOfTime60-89DaysPastDueNotWorse'] >= 90, 'NumberOfTime60-89DaysPastDueNotWorse'] = 11
+train.loc[train['NumberOfTimes90DaysLate'] >= 90, 'NumberOfTimes90DaysLate'] = 17
+
+print("Unique values in 30-59Days", np.unique(train['NumberOfTime30-59DaysPastDueNotWorse']))
+print("Unique values in 60-89Days", np.unique(train['NumberOfTime60-89DaysPastDueNotWorse']))
+print("Unique values in 90Days", np.unique(train['NumberOfTimes90DaysLate']))
+```
+
+    Unique values in 30-59Days [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13]
+    Unique values in 60-89Days [ 0  1  2  3  4  5  6  7  8  9 11]
+    Unique values in 90Days [ 0  1  2  3  4  5  6  7  8  9 10 11 12 13 14 15 17]
+
+
