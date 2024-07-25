@@ -181,21 +181,21 @@ y = df['SeriousDlqin2yrs']
  ###   (120000, 11) , (30000, 11)
 
 
-### Univariate Analysis using Training Numerical dataset
-
 ## Univariate Analysis using Training Numerical Dataset
 
 
-```python
-plot_hist_boxplot('RevolvingUtilizationOfUnsecuredLines')
-```
-
-    skewness :  100.53820302006339
-    kurtosis :  15559.574874151434
 
 
 
     
-![png](NumberRealEstateLoansOrLines'.png)
+![RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png](RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png)
 
+skewness :  100.53820302006339
+kurtosis :  15559.574874151434
+
+
+![NumberOfTime60-89DaysPastDueNotWorse](NumberOfTime60-89DaysPastDueNotWorse.png)
+
+skewness :  23.393598377179494
+kurtosis :  548.632426633495
 
