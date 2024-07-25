@@ -210,3 +210,70 @@ kurtosis :  548.632426633495
 skewness :  23.155584699487473
 kurtosis :  540.8745184818808
 
+
+## DISTRIBUTION OF DATA FOR SKEWNESS AND KURTOSIS
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Skewness</th>
+      <th>Kurtosis</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>MonthlyIncome</th>
+      <td>122.587602</td>
+      <td>21861.235155</td>
+    </tr>
+    <tr>
+      <th>RevolvingUtilizationOfUnsecuredLines</th>
+      <td>100.538203</td>
+      <td>15559.574874</td>
+    </tr>
+    <tr>
+      <th>DebtRatio</th>
+      <td>99.142824</td>
+      <td>14370.263366</td>
+    </tr>
+    <tr>
+      <th>NumberOfTime60-89DaysPastDueNotWorse</th>
+      <td>23.393598</td>
+      <td>548.632427</td>
+    </tr>
+    <tr>
+      <th>NumberOfTimes90DaysLate</th>
+      <td>23.155585</td>
+      <td>540.874518</td>
+    </tr>
+    <tr>
+      <th>NumberOfTime30-59DaysPastDueNotWorse</th>
+      <td>22.656445</td>
+      <td>525.179814</td>
+    </tr>
+    <tr>
+      <th>NumberRealEstateLoansOrLines</th>
+      <td>3.752641</td>
+      <td>71.087650</td>
+    </tr>
+    <tr>
+      <th>NumberOfDependents</th>
+      <td>1.598556</td>
+      <td>3.178548</td>
+    </tr>
+    <tr>
+      <th>NumberOfOpenCreditLinesAndLoans</th>
+      <td>1.228632</td>
+      <td>3.178869</td>
+    </tr>
+    <tr>
+      <th>age</th>
+      <td>0.186196</td>
+      <td>-0.498428</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
