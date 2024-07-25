@@ -205,7 +205,7 @@ kurtosis :  520.586140091868
 skewness :  23.393598377179494
 kurtosis :  548.632426633495
 
-![hist_boxplot_90.png](hist_boxplot_90.png)
+![hist_boxplot_90_days_late.png](hist_boxplot_90_days_late.png)
 
 skewness :  23.155584699487473
 kurtosis :  540.8745184818808
