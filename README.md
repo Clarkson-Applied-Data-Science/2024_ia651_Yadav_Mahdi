@@ -10,3 +10,25 @@
 
 ***
 * **Objective** : Building a model using the inputs/attributes which are general profile and historical records of a borrower to predict whether one is likely to have serious delinquency in the next 2 years 
+
+
+
+<class 'pandas.core.frame.DataFrame'>
+RangeIndex: 150000 entries, 0 to 149999
+Data columns (total 12 columns):
+ #   Column                                Non-Null Count   Dtype  
+---  ------                                --------------   -----  
+ 0   Unnamed: 0                            150000 non-null  int64  
+ 1   SeriousDlqin2yrs                      150000 non-null  int64  
+ 2   RevolvingUtilizationOfUnsecuredLines  150000 non-null  float64
+ 3   age                                   150000 non-null  int64  
+ 4   NumberOfTime30-59DaysPastDueNotWorse  150000 non-null  int64  
+ 5   DebtRatio                             150000 non-null  float64
+ 6   MonthlyIncome                         120269 non-null  float64
+ 7   NumberOfOpenCreditLinesAndLoans       150000 non-null  int64  
+ 8   NumberOfTimes90DaysLate               150000 non-null  int64  
+ 9   NumberRealEstateLoansOrLines          150000 non-null  int64  
+ 10  NumberOfTime60-89DaysPastDueNotWorse  150000 non-null  int64  
+ 11  NumberOfDependents                    146076 non-null  float64
+dtypes: float64(4), int64(8)
+memory usage: 13.7 MB
