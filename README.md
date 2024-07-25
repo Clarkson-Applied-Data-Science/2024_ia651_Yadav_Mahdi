@@ -13,3 +13,14 @@
 
 
 
+<pre><code class="python">print(df['SeriousDlqin2yrs'].unique())
+percentage_Serious_Deliquency = (df['SeriousDlqin2yrs']).sum()/ len(df) * 100
+print('{}% of the borrrowers are failing in Serious Delinquency'.format(percentage_Serious_Deliquency))</code></pre>
+
+<p>[1 0]
+6.683999999999999% of the borrrowers are failing in Serious Delinquency</p>
+
+
+## Data Analysis: Serious Delinquency in 2 Years
+
+
