@@ -286,9 +286,11 @@ kurtosis :  540.8745184818808
 * **
 * *In the columns NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate, we see delinquency range beyond 90 which is common across all 3 features.*
 * **
-* *Treating outliers for the columns  -- NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate*
+* *Treating outliers for the columns  -- RevolvingUtilizationOfunsecuredlines, NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate*
 
+* **Revolving Utilization of Unsecured Lines**
 
+ * ** * Despite owing thousands, out of these these 187 people falling in the serious delinquency which means this might be another error. 
 
 ![Uniquevalues.png](Uniquevalues.png)
 
