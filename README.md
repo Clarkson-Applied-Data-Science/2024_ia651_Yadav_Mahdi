@@ -367,3 +367,180 @@ kurtosis :  540.8745184818808
 #### Smote
 
 ![Smote.png ](Smote.png  )
+
+* Now the event rate in the training dataset is 50%
+
+## Scaling
+ * BoxCox Transformations
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>skew</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>MonthlyIncome</th>
+      <td>150.440824</td>
+    </tr>
+    <tr>
+      <th>MonthlyIncomePerPerson</th>
+      <td>111.019404</td>
+    </tr>
+    <tr>
+      <th>MonthlyDebt</th>
+      <td>104.775409</td>
+    </tr>
+    <tr>
+      <th>DebtRatio</th>
+      <td>103.291924</td>
+    </tr>
+    <tr>
+      <th>NumberOfTime60-89DaysPastDueNotWorse</th>
+      <td>8.754920</td>
+    </tr>
+    <tr>
+      <th>NumberOfTimes90DaysLate</th>
+      <td>8.257673</td>
+    </tr>
+    <tr>
+      <th>CombinedPastDue</th>
+      <td>8.249286</td>
+    </tr>
+    <tr>
+      <th>NumberOfTime30-59DaysPastDueNotWorse</th>
+      <td>5.156716</td>
+    </tr>
+    <tr>
+      <th>NumberRealEstateLoansOrLines</th>
+      <td>3.764830</td>
+    </tr>
+    <tr>
+      <th>isRetired</th>
+      <td>2.556428</td>
+    </tr>
+    <tr>
+      <th>NumberOfDependents</th>
+      <td>1.411704</td>
+    </tr>
+    <tr>
+      <th>hasMultipleRealEstates</th>
+      <td>1.348802</td>
+    </tr>
+    <tr>
+      <th>RevolvingLines</th>
+      <td>1.275148</td>
+    </tr>
+    <tr>
+      <th>CombinedCreditLoans</th>
+      <td>1.115022</td>
+    </tr>
+    <tr>
+      <th>NumberOfOpenCreditLinesAndLoans</th>
+      <td>1.108239</td>
+    </tr>
+    <tr>
+      <th>RevolvingUtilizationOfUnsecuredLines</th>
+      <td>0.747770</td>
+    </tr>
+    <tr>
+      <th>hasRevolvingLines</th>
+      <td>-4.122311</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+ * Standaradization
+
+
+
+<div>
+<style scoped>
+    .dataframe tbody tr th:only-of-type {
+        vertical-align: middle;
+    }
+
+    .dataframe tbody tr th {
+        vertical-align: top;
+    }
+
+    .dataframe thead th {
+        text-align: right;
+    }
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>skew</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>NumberOfTime60-89DaysPastDueNotWorse</th>
+      <td>4.644356</td>
+    </tr>
+    <tr>
+      <th>NumberOfTimes90DaysLate</th>
+      <td>3.765594</td>
+    </tr>
+    <tr>
+      <th>isRetired</th>
+      <td>2.556428</td>
+    </tr>
+    <tr>
+      <th>NumberOfTime30-59DaysPastDueNotWorse</th>
+      <td>2.103570</td>
+    </tr>
+    <tr>
+      <th>DebtRatio</th>
+      <td>2.103448</td>
+    </tr>
+    <tr>
+      <th>MonthlyDebt</th>
+      <td>1.921552</td>
+    </tr>
+    <tr>
+      <th>CombinedPastDue</th>
+      <td>1.857779</td>
+    </tr>
+    <tr>
+      <th>hasMultipleRealEstates</th>
+      <td>1.348802</td>
+    </tr>
+    <tr>
+      <th>NumberOfDependents</th>
+      <td>0.788863</td>
+    </tr>
+    <tr>
+      <th>NumberRealEstateLoansOrLines</th>
+      <td>0.668400</td>
+    </tr>
+    <tr>
+      <th>NumberOfOpenCreditLinesAndLoans</th>
+      <td>-0.573041</td>
+    </tr>
+    <tr>
+      <th>CombinedCreditLoans</th>
+      <td>-0.617103</td>
+    </tr>
+    <tr>
+      <th>MonthlyIncomePerPerson</th>
+      <td>-1.287085</td>
+    </tr>
+    <tr>
+      <th>MonthlyIncome</th>
+      <td>-1.970267</td>
+    </tr>
+    <tr>
+      <th>hasRevolvingLines</th>
+      <td>-4.122311</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
