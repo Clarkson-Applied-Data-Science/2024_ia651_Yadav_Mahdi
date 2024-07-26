@@ -454,23 +454,6 @@ kurtosis :  540.8745184818808
 </div>
 
 
- * Standaradization
-
-
-
-<div>
-<style scoped>
-    .dataframe tbody tr th:only-of-type {
-        vertical-align: middle;
-    }
-
-    .dataframe tbody tr th {
-        vertical-align: top;
-    }
-
-    .dataframe thead th {
-        text-align: right;
-    }
 
 <table border="1" class="dataframe">
   <thead>
@@ -544,3 +527,172 @@ kurtosis :  540.8745184818808
 </table>
 </div>
 
+
+![AfterScaling.png ](AfterScaling.png  )
+
+
+#### Various ML models
+
+* **Training Box Cox transformed dataset using ML algorithms**
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Random Forest</th>
+      <th>XGBoost</th>
+      <th>Logistic Regression</th>
+      <th>DecisionTreeClassifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Mean Accuracy</th>
+      <td>0.917</td>
+      <td>0.877</td>
+      <td>0.794</td>
+      <td>0.861</td>
+    </tr>
+    <tr>
+      <th>Accuracy deviation</th>
+      <td>0.006</td>
+      <td>0.012</td>
+      <td>0.003</td>
+      <td>0.005</td>
+    </tr>
+    <tr>
+      <th>Precision Macro</th>
+      <td>63.247444</td>
+      <td>60.990873</td>
+      <td>58.906125</td>
+      <td>56.526875</td>
+    </tr>
+    <tr>
+      <th>Precision Micro</th>
+      <td>89.422017</td>
+      <td>86.113059</td>
+      <td>78.573575</td>
+      <td>83.268223</td>
+    </tr>
+    <tr>
+      <th>Recall Macro</th>
+      <td>69.053508</td>
+      <td>72.002585</td>
+      <td>76.480959</td>
+      <td>63.718785</td>
+    </tr>
+    <tr>
+      <th>Recall Micro</th>
+      <td>89.422017</td>
+      <td>86.113059</td>
+      <td>78.573575</td>
+      <td>83.268223</td>
+    </tr>
+    <tr>
+      <th>F1 Score Macro</th>
+      <td>65.396903</td>
+      <td>63.585683</td>
+      <td>59.467669</td>
+      <td>57.679214</td>
+    </tr>
+    <tr>
+      <th>F1 Score Micro</th>
+      <td>89.422017</td>
+      <td>86.113059</td>
+      <td>78.573575</td>
+      <td>83.268223</td>
+    </tr>
+    <tr>
+      <th>Confusion Matrix</th>
+      <td>[[25868, 2076], [1092, 913]]</td>
+      <td>[[24673, 3271], [888, 1117]]</td>
+      <td>[[22047, 5897], [520, 1485]]</td>
+      <td>[[24113, 3831], [1180, 825]]</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+* ** Training Standaradized dataset using ML algorithms
+
+  <table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>Random Forest</th>
+      <th>XGBoost</th>
+      <th>Logistic Regression</th>
+      <th>DecisionTreeClassifier</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>Mean Accuracy</th>
+      <td>0.916</td>
+      <td>0.877</td>
+      <td>0.827</td>
+      <td>0.861</td>
+    </tr>
+    <tr>
+      <th>Accuracy deviation</th>
+      <td>0.006</td>
+      <td>0.012</td>
+      <td>0.011</td>
+      <td>0.006</td>
+    </tr>
+    <tr>
+      <th>Precision Macro</th>
+      <td>63.36092</td>
+      <td>60.632859</td>
+      <td>60.230852</td>
+      <td>56.45193</td>
+    </tr>
+    <tr>
+      <th>Precision Micro</th>
+      <td>89.432034</td>
+      <td>85.725734</td>
+      <td>84.547063</td>
+      <td>83.171391</td>
+    </tr>
+    <tr>
+      <th>Recall Macro</th>
+      <td>69.336656</td>
+      <td>71.725582</td>
+      <td>72.760643</td>
+      <td>63.620599</td>
+    </tr>
+    <tr>
+      <th>Recall Micro</th>
+      <td>89.432034</td>
+      <td>85.725734</td>
+      <td>84.547063</td>
+      <td>83.171391</td>
+    </tr>
+    <tr>
+      <th>F1 Score Macro</th>
+      <td>65.561259</td>
+      <td>63.127371</td>
+      <td>62.568401</td>
+      <td>57.573529</td>
+    </tr>
+    <tr>
+      <th>F1 Score Micro</th>
+      <td>89.432034</td>
+      <td>85.725734</td>
+      <td>84.547063</td>
+      <td>83.171391</td>
+    </tr>
+    <tr>
+      <th>Confusion Matrix</th>
+      <td>[[25859, 2085], [1080, 925]]</td>
+      <td>[[24560, 3384], [891, 1114]]</td>
+      <td>[[24135, 3809], [819, 1186]]</td>
+      <td>[[24086, 3858], [1182, 823]]</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+![Reciever.png](Reciever.png)
