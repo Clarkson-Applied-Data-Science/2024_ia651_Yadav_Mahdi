@@ -30,7 +30,7 @@
 6. [Class Imbalance Problem](#class-imbalance-problem)
 7. [Scaling](#Scaling)
 8. [Machine Learning Models](#machine-learning-models)
-
+9. [Predictions](#Predictions)
 # Dataset
 
 
