@@ -290,9 +290,13 @@ kurtosis :  540.8745184818808
 
 
 
+![Uniquevalues.png](Uniquevalues.png)
+
+* * The records in column 'NumberOfTime30-59DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
+* **
+* *Replacing them with the maximum value before 96 i.e. 12, 11 and 17*
 
 
-```python
 
-![Uniquevalues.png](Uniquevalues.png
+![abc.png](abc.png)
 
