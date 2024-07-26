@@ -14,9 +14,24 @@
 ***
 * **Objective** : Building a model using the inputs/attributes which are general profile and historical records of a borrower to predict whether one is likely to have serious delinquency in the next 2 years 
 
+## Table of Contents
 
+1. [Introduction](#introduction)
+2. [Business Context](#business-context)
+3. [Data Analysis](#Exploratory-DataAnalysis)
+   
+   - [SeriousDlqin2yrs Count Plot](#seriousdlqin2yrs-count-plot)
+   - [Dataset Statistical Distribution](#dataset-statistical-distribution)
+   - [Univariate Analysis using Training Numerical Dataset](#univariate-analysis-using-training-numerical-dataset)
+   - [Distribution of Data for Skewness and Kurtosis](#distribution-of-data-for-skewness-and-kurtosis)
+   - [Bivariate Analysis](#bivariate-analysis)
+     
+5. [Feature Engineering](#Feature-Engineering)
+6. [Class Imbalance Problem](#class-imbalance-problem)
+7. [Scaling](#Scaling)
+8. [Machine Learning Models](#machine-learning-models)
 
-## Data Analysis: 
+# Exploratory Data Analysis: 
 
 
 ### SeriousDlqin2yrs Count Plot:
