@@ -353,6 +353,17 @@ kurtosis :  540.8745184818808
     * Upsampling the minority class
     * Downsampling the majority class
     * SMOTE - synthethic sampling
-
     
+#### Upsampling
 
+![Up.png ](Up.png  )
+
+#### Downsampling
+
+![Down.png ](Down.png  )
+
+![Down2.png ](Down2.png  )
+
+#### Smote
+
+![Smote.png ](Smote.png  )
