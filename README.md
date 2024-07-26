@@ -1,8 +1,12 @@
 # Analysis On Default Credit Case Study
 
 
+***
+## Business Context - Banks primarily thrive on their money lending business. The more efficiently they can lend to individuals who repay with good interest, the better their revenue.
+* **
 
-### Business Context - Banks primarily thrive on their money lending business. The more efficiently they can lend to individuals who repay with good interest, the better their revenue.
+
+### Objective : Building a model using the inputs/attributes which are general profile and historical records of a borrower to predict whether one is likely to have serious delinquency in the next 2 years 
 * **
 ### Key Objectives:
 
@@ -17,7 +21,7 @@ Enhance the bank's revenue and reputation by minimizing defaults.
 * These kind of predictions will help banks to take necessary actions.
 
 ***
-### Objective : Building a model using the inputs/attributes which are general profile and historical records of a borrower to predict whether one is likely to have serious delinquency in the next 2 years 
+
 
 ## Table of Contents
 
