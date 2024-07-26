@@ -290,15 +290,55 @@ kurtosis :  540.8745184818808
 
 * **Revolving Utilization of Unsecured Lines**
 
- * ** * Despite owing thousands, out of these these 187 people falling in the serious delinquency which means this might be another error. 
+   ** Despite owing thousands, out of these these 187 people falling in the serious delinquency which means this might be another error.
+
+![187.png](187.png)
+
+
+* * The records in column 'NumberOfTime30-59DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
 
 ![Uniquevalues.png](Uniquevalues.png)
 
-* * The records in column 'NumberOfTime30-59DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
 * **
 * *Replacing them with the maximum value before 96 i.e. 12, 11 and 17*
 
 
-
 ![abc.png](abc.png)
 
+#### Missing Value Treatment  
+* *Since MonthlyIncome is an integer value, replacing the nulls with the median values instead of mean as it was heavily right skewed.*
+* *Number of Dependents filling by mode which is 0.
+
+  * **Correlation Plot**
+ 
+    
+ 
+  * * From the correlation heatmap above, we can see the most correlated values to SeriousDlqin2yrs are NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate.
+* **
+* Number of Open Credit Lines and Loans and Number of Real Estate Loans or Lines also have a significant correlation
+
+### Bivariate Analysis
+
+boxplot_violinplot('SeriousDlqin2yrs', 'age')
+
+![BI1.png ](BI1.png  )
+
+Bi2.png
+Bi3.png
+Bi4
+
+boxplot_violinplot('SeriousDlqin2yrs', 'RevolvingUtilizationOfUnsecuredLines')
+
+![Bi2.png ](Bi2.png  )
+
+boxplot_violinplot('SeriousDlqin2yrs', 'NumberOfTime30-59DaysPastDueNotWorse')
+
+![Bi3.png ](Bi3.png  )
+
+boxplot_violinplot('SeriousDlqin2yrs', 'NumberOfTime60-89DaysPastDueNotWorse')
+![Bi2.png ](Bi2.png  )
+
+boxplot_violinplot('SeriousDlqin2yrs', 'NumberOfTimes90DaysLate')
+
+
+### Feature Engineering
