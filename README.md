@@ -498,7 +498,7 @@ kurtosis :  540.8745184818808
 
   * **Correlation Plot**
  
-    
+    ![Corelatiom.png](Corelation.png)
  
   * * From the correlation heatmap above, we can see the most correlated values to SeriousDlqin2yrs are NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate.
 * **
@@ -884,6 +884,10 @@ kurtosis :  540.8745184818808
 # Various ML Models
 
 ![Receiver.png](Receiver.png)
+
+# Using Logistic Model for Prediction
+
+![LogisticRegression.png](LogisticRegression.png)
 
 # Predictions On Scaled Data
 ![Pred1.png](Pred1.png)
