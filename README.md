@@ -319,26 +319,40 @@ kurtosis :  540.8745184818808
 
 ### Bivariate Analysis
 
-boxplot_violinplot('SeriousDlqin2yrs', 'age')
+('SeriousDlqin2yrs', 'age')
 
 ![BI1.png ](BI1.png  )
 
-Bi2.png
-Bi3.png
-Bi4
+('SeriousDlqin2yrs', 'NumberOfTime30-59DaysPastDueNotWorse')
 
-boxplot_violinplot('SeriousDlqin2yrs', 'RevolvingUtilizationOfUnsecuredLines')
+![Bi4.png ](Bi4.png  )
 
-![Bi2.png ](Bi2.png  )
+('SeriousDlqin2yrs', 'NumberOfTime60-89DaysPastDueNotWorse')
+![Bi5.png ](Bi5.png  )
 
-boxplot_violinplot('SeriousDlqin2yrs', 'NumberOfTime30-59DaysPastDueNotWorse')
-
-![Bi3.png ](Bi3.png  )
-
-boxplot_violinplot('SeriousDlqin2yrs', 'NumberOfTime60-89DaysPastDueNotWorse')
-![Bi2.png ](Bi2.png  )
-
-boxplot_violinplot('SeriousDlqin2yrs', 'NumberOfTimes90DaysLate')
-
+('SeriousDlqin2yrs', 'NumberOfTimes90DaysLate')
+![Bi6.png ](Bi6.png  )
 
 ### Feature Engineering
+
+*Combined features
+
+  ```python
+    data['CombinedPastDue']     = data['NumberOfTime30-59DaysPastDueNotWorse'] + data['NumberOfTime60-89DaysPastDueNotWorse'] + data['NumberOfTimes90DaysLate']
+    data['CombinedCreditLoans'] = data['NumberOfOpenCreditLinesAndLoans'] + data['NumberRealEstateLoansOrLines']
+  ```
+
+ New_train.shape, New_test.shape
+* (119542, 21), (29946, 21)
+
+* Event rate of new dataset 
+* 0.0670057385688712 , 0.06668670273158352
+
+* ** Tackling Class Imbalance Problem using:
+* **
+    * Upsampling the minority class
+    * Downsampling the majority class
+    * SMOTE - synthethic sampling
+
+    
+
