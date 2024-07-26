@@ -876,5 +876,11 @@ kurtosis :  540.8745184818808
 </table>
 </div>
 
+# Various ML Models
 
-![Reciever.png](Reciever.png)
+![Receiver.png](Receiver.png)
+
+# Predictions On Scaled Data
+![Pred1.png](Pred1.png)
+
+![Pred2.png](Pred2.png)
