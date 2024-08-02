@@ -596,8 +596,7 @@ kurtosis :  540.8745184818808
 
 *There are 260 out of 299 rows where Monthly Income is equal to the Serious Delinquencies in 2 years. Hence we remove these 260 outliers from our analysis as their current values aren't useful for our predictive modelling and will add to the bias and variance.
 
-* **Age**
-
+###    AGE
 
 <table border="1" class="dataframe">
   <thead>
@@ -655,10 +654,9 @@ kurtosis :  540.8745184818808
 * It can be observed that the data includes a record with age = 0 which is not a valid age ,updating the record with mode age.
 * Replacing the error/odd value with the mode, that is 21.
 
+###    NumberOfTime30-59, 60-89, 90DaysPastDueNotWorse
 
-** NumberOfTime30-59DaysPastDueNotWorse
-
-* * The records in column 'NumberOfTime30-59DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
+* * The records in column 'NumberOfTime30-59, 60-89, 90DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
 
 ![Uniquevalues.png](Uniquevalues.png)
 
