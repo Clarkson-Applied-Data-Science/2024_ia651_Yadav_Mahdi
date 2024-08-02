@@ -1032,10 +1032,18 @@ kurtosis :  540.8745184818808
 
 ![AfterScaling.png ](AfterScaling.png  )
 
-### Calculation Of Scores For Various ML models
+# Model Performance Comparison
 
-* Training Log transformed dataset using ML algorithms
-  
+## Training Log Transformed Dataset using ML Algorithms
+- **Random Forest**: Highest mean accuracy (0.916), high precision, and recall.
+- **Logistic Regression**: Lower accuracy (0.79) but decent precision and recall.
+- **Decision Tree**: Moderate accuracy (0.859) with lower precision and recall compared to Random Forest.
+
+## Training Standardized Dataset using ML Algorithms
+- **Random Forest**: Highest mean accuracy (0.917), high precision, and recall.
+- **Logistic Regression**: Improved accuracy (0.814), good precision, and recall.
+- **Decision Tree**: Moderate accuracy (0.86) with lower precision and recall compared to Random Forest.
+
 ![LOGML.png ](LOGML.png  )
 
 * Training Standaradized dataset using ML algorithms
