@@ -1009,27 +1009,93 @@ kurtosis :  540.8745184818808
   
 ![Standard.png ](Standard.png  )
 
-### Plotting ROC AUC for the ML models for the transformed dataset**
+
+<body>
+    <h1>Receiver Operating Characteristic (ROC) Curve</h1>
+    <p>
+        The ROC curve compares the performance of three models: Random Forest, Logistic Regression, and Decision Tree.
+    </p>
+    <ul>
+        <li><strong>Random Forest</strong>: Highest AUC (0.83), indicating the best performance.</li>
+        <li><strong>Logistic Regression</strong>: Moderate AUC (0.78), showing good performance.</li>
+        <li><strong>Decision Tree</strong>: Lowest AUC (0.64), indicating lower performance.</li>
+    </ul>
+    <p>
+        The curve plots sensitivity (true positive rate) against 1-specificity (false positive rate) for each model.
+    </p>
+</body>
 
 ![ROCCurve.png ](ROCCurve.png  )
 
- #### Feature Importance - Random Forest
+ <body>
+    <h1>Random Forest Feature Importance</h1>
+    <p>
+        <ul>
+            <li><strong>RevolvingUtilizationOfUnsecuredLines</strong> is the most important feature.</li>
+            <li>Significant features include <strong>CombinedPastDue</strong> and <strong>NumberOfTime30-59DaysPastDueNotWorse</strong>.</li>
+            <li>Features like <strong>IsAlone</strong> and <strong>hasMultipleRealEstates</strong> have low importance.</li>
+        </ul>
+    </p>
+</body>
 
    
 ![FeatureImportance.png ](FeatureImportance.png  )
 
- #### Feature Importance - Logistic Regression
+
+<body>
+    <h1> Logistic Regression </h1>
+    <p>
+        <ul>
+            <li>Positive coefficients: <strong>CombinedPastDue</strong> and <strong>NumberOfTime30-59DaysPastDueNotWorse</strong> increase likelihood.</li>
+            <li>Negative coefficients: <strong>age</strong> and <strong>RevolvingLines</strong> decrease likelihood.</li>
+            <li>The chart shows the relative importance of features.</li>
+        </ul>
+    </p>
+</body>
 
 ![FeatureLogic.png ](FeatureLogic.png  )
 
- #### Feature Importance - Decision Tree
 
+
+<body>
+    <h1>Decision Tree Feature Importance</h1>
+    <p>
+        <ul>
+            <li><strong>RevolvingUtilizationOfUnsecuredLines</strong> is the top feature.</li>
+            <li>Notable features are <strong>MonthlyDebt</strong> and <strong>CombinedCreditLoans</strong>.</li>
+            <li><strong>IsAlone</strong> and <strong>hasMultipleRealEstates</strong> show minimal importance.</li>
+        </ul>
+    </p>
+</body>
  ![FeatureDescsion Tree.png ](FeatureDecisionTree.png  )
 
- ##Predictions
+
+<body>
+    <h1>Prediction Probabilities</h1>
+    <p>
+        This image displays the prediction probabilities and feature contributions for a model.
+    </p>
+    <ul>
+        <li>Prediction probabilities for classes 0 and 1 are 0.73 and 0.27, respectively.</li>
+        <li>Key features influencing the prediction include <strong>CombinedPastDue</strong>, <strong>NumberOfTimes90DaysLate</strong>, and <strong>NumberOfTime30-59DaysPastDueNotWorse</strong>.</li>
+        <li>The values of features such as <strong>age</strong>, <strong>MonthlyIncomePerPerson</strong>, and <strong>isRetired</strong> are shown.</li>
+    </ul>
+</body>
+
+
 
 ![Prediction1.png ](Prediction1.png  )
 
-
+<body>
+    <h1>Prediction Probabilities</h1>
+    <p>
+        This image displays the prediction probabilities and feature contributions for a model.
+    </p>
+    <ul>
+        <li>Prediction probabilities for classes 0 and 1 are 0.25 and 0.75, respectively.</li>
+        <li>Key features influencing the prediction include <strong>CombinedPastDue</strong>, <strong>RevolvingUtilizationOfUnsecuredLines</strong>, and <strong>NumberOfTimes90DaysLate</strong>.</li>
+        <li>The values of features such as <strong>age</strong>, <strong>MonthlyIncomePerPerson</strong>, and <strong>isRetired</strong> are shown.</li>
+    </ul>
+</body>
 
 ![Prediction2.png ](Prediction2.png  )
