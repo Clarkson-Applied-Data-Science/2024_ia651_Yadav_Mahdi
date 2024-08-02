@@ -22,7 +22,8 @@
 
 
 ***
-### Business Context - Banks primarily thrive on their money lending business. The more efficiently they can lend to individuals who repay with good interest, the better their revenue.
+### Business Context :
+Banks are primarily known for their money lending business. The more money they lend to borrowers who can pay high interest and make timely repayments, the better the bank's ability to generate substantial revenue. However, there are some borrowers who, due to various reasons, are unable to repay the bank, which can lead to significant financial losses.
 * **
 
 
