@@ -826,7 +826,7 @@ kurtosis :  540.8745184818808
 
 #### Smote
 
-![Smote.png ](Smote.png  )
+![Smote1.png ](Smote1.png  )
 
 * Now the event rate in the training dataset is 50%
 
