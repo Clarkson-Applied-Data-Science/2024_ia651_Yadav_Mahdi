@@ -1069,7 +1069,19 @@ kurtosis :  540.8745184818808
 </body>
  ![FeatureDescsion Tree.png ](FeatureDecisionTree.png  )
 
+<body>
+    <h1>Prediction Probabilities</h1>
+    <p>
+        This image displays the prediction probabilities and feature contributions for a model.
+    </p>
+    <ul>
+        <li>Prediction probabilities for classes 0 and 1 are 0.25 and 0.75, respectively.</li>
+        <li>Key features influencing the prediction include <strong>CombinedPastDue</strong>, <strong>RevolvingUtilizationOfUnsecuredLines</strong>, and <strong>NumberOfTimes90DaysLate</strong>.</li>
+        <li>The values of features such as <strong>age</strong>, <strong>MonthlyIncomePerPerson</strong>, and <strong>isRetired</strong> are shown.</li>
+    </ul>
+</body>
 
+![Prediction2.png ](Prediction2.png  )
 <body>
     <h1>Prediction Probabilities</h1>
     <p>
@@ -1086,16 +1098,4 @@ kurtosis :  540.8745184818808
 
 ![Prediction1.png ](Prediction1.png  )
 
-<body>
-    <h1>Prediction Probabilities</h1>
-    <p>
-        This image displays the prediction probabilities and feature contributions for a model.
-    </p>
-    <ul>
-        <li>Prediction probabilities for classes 0 and 1 are 0.25 and 0.75, respectively.</li>
-        <li>Key features influencing the prediction include <strong>CombinedPastDue</strong>, <strong>RevolvingUtilizationOfUnsecuredLines</strong>, and <strong>NumberOfTimes90DaysLate</strong>.</li>
-        <li>The values of features such as <strong>age</strong>, <strong>MonthlyIncomePerPerson</strong>, and <strong>isRetired</strong> are shown.</li>
-    </ul>
-</body>
 
-![Prediction2.png ](Prediction2.png  )
