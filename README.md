@@ -820,9 +820,9 @@ kurtosis :  540.8745184818808
 
 #### Downsampling
 
-![Down.png ](Down.png  )
+![Downsampling1.png ](Downsampling2.png  )
 
-![Down2.png ](Down2.png  )
+![Downsampling2.png ](Downsampling2.png  )
 
 #### Smote
 
