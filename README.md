@@ -677,24 +677,48 @@ kurtosis :  540.8745184818808
 * Number of Open Credit Lines and Loans and Number of Real Estate Loans or Lines also have a significant correlation
 
 ### Bivariate Analysis
+<body>
+    <h1>Box Plot and Violin Plot of Age</h1>
+    <p>
+        These plots compare the age distribution for individuals with and without serious delinquency in 2 years. The median age is lower for those with delinquency, with outliers present in both groups.
+    </p>
+</body>
 
-#### Age By SeriousDelinq2yrs
 
 ![BI1.png ](BI1.png  )
 
 
-#### NumberOfTime30-59DaysPastDueNotWorse  By SeriousDelinq2yrs
+<body>
+    <h1>Box Plot and Violin Plot of NumberOfTime30-59DaysPastDueNotWorse</h1>
+    <p>
+        These plots show the distribution of the number of times 30-59 days past due not worse. The median is higher for those with delinquency, with significant outliers.
+    </p>
+</body>
 
 ![Bi4.png ](Bi4.png  )
 
 
-#### NumberOfTime60-89DaysPastDueNotWorse By SeriousDelinq2yrs
+ <body>
+    <h1>Box Plot and Violin Plot of NumberOfTime60-89DaysPastDueNotWorse</h1>
+    <p>
+        These plots illustrate the number of times 60-89 days past due not worse. Higher incidence is observed in the serious delinquency group, with data heavily skewed towards zero.
+    </p>
+</body>
 
 ![Bi5.png ](Bi5.png  )
 
-#### NumberOfTimes90DaysLate By SeriousDelinq2yrs
+ 
+<body>
+    <h1>Box Plot and Violin Plot of NumberOfTimes90DaysLate</h1>
+    <p>
+        These plots compare the number of times 90 days late between the two groups. The serious delinquency group shows more frequent late payments and more outliers.
+    </p>
+</body>
 
 ![Bi6.png ](Bi6.png  )
+
+
+ 
 
 ### Feature Engineering
 
