@@ -681,23 +681,27 @@ kurtosis :  540.8745184818808
 
 ### Bivariate Analysis
 
-('SeriousDlqin2yrs', 'age')
+#### Age By SeriousDelinq2yrs
 
 ![BI1.png ](BI1.png  )
 
-('SeriousDlqin2yrs', 'NumberOfTime30-59DaysPastDueNotWorse')
+
+#### NumberOfTime30-59DaysPastDueNotWorse  By SeriousDelinq2yrs
 
 ![Bi4.png ](Bi4.png  )
 
-('SeriousDlqin2yrs', 'NumberOfTime60-89DaysPastDueNotWorse')
+
+#### NumberOfTime60-89DaysPastDueNotWorse By SeriousDelinq2yrs
+
 ![Bi5.png ](Bi5.png  )
 
-('SeriousDlqin2yrs', 'NumberOfTimes90DaysLate')
+#### NumberOfTimes90DaysLate By SeriousDelinq2yrs
+
 ![Bi6.png ](Bi6.png  )
 
 ### Feature Engineering
 
-*Combined features
+* Combined features
 
   ```python
     data['CombinedPastDue']     = data['NumberOfTime30-59DaysPastDueNotWorse'] + data['NumberOfTime60-89DaysPastDueNotWorse'] + data['NumberOfTimes90DaysLate']
@@ -705,17 +709,111 @@ kurtosis :  540.8745184818808
   ```
 
  New_train.shape, New_test.shape
-* (119542, 21), (29946, 21)
+* [119542, 21] [29946, 21]
+
+* New Features after feature Interaction 
+ <table border="1" class="dataframe">
+  <thead>
+    <tr>
+      <th>Index</th>
+      <th>Columns</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>1</td>
+      <td>RevolvingUtilizationOfUnsecuredLines</td>
+    </tr>
+    <tr>
+      <td>2</td>
+      <td>age</td>
+    </tr>
+    <tr>
+      <td>3</td>
+      <td>NumberOfTime30-59DaysPastDueNotWorse</td>
+    </tr>
+    <tr>
+      <td>4</td>
+      <td>DebtRatio</td>
+    </tr>
+    <tr>
+      <td>5</td>
+      <td>MonthlyIncome</td>
+    </tr>
+    <tr>
+      <td>6</td>
+      <td>NumberOfOpenCreditLinesAndLoans</td>
+    </tr>
+    <tr>
+      <td>7</td>
+      <td>NumberOfTimes90DaysLate</td>
+    </tr>
+    <tr>
+      <td>8</td>
+      <td>NumberRealEstateLoansOrLines</td>
+    </tr>
+    <tr>
+      <td>9</td>
+      <td>NumberOfTime60-89DaysPastDueNotWorse</td>
+    </tr>
+    <tr>
+      <td>10</td>
+      <td>NumberOfDependents</td>
+    </tr>
+    <tr>
+      <td>11</td>
+      <td>SeriousDlqin2yrs</td>
+    </tr>
+    <tr>
+      <td>12</td>
+      <td>CombinedPastDue</td>
+    </tr>
+    <tr>
+      <td>13</td>
+      <td>CombinedCreditLoans</td>
+    </tr>
+    <tr>
+      <td>14</td>
+      <td>MonthlyIncomePerPerson</td>
+    </tr>
+    <tr>
+      <td>15</td>
+      <td>MonthlyDebt</td>
+    </tr>
+    <tr>
+      <td>16</td>
+      <td>isRetired</td>
+    </tr>
+    <tr>
+      <td>17</td>
+      <td>RevolvingLines</td>
+    </tr>
+    <tr>
+      <td>18</td>
+      <td>hasRevolvingLines</td>
+    </tr>
+    <tr>
+      <td>19</td>
+      <td>hasMultipleRealEstates</td>
+    </tr>
+    <tr>
+      <td>20</td>
+      <td>IsAlone</td>
+    </tr>
+  </tbody>
+</table>
+
 
 * Event rate of new dataset 
 * 0.0670057385688712 , 0.06668670273158352
 
-* ** Tackling Class Imbalance Problem using:
+### Tackling Class Imbalance Problem using:
 * **
     * Upsampling the minority class
     * Downsampling the majority class
     * SMOTE - synthethic sampling
-    
+
+
 #### Upsampling
 
 ![Up.png ](Up.png  )
