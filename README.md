@@ -1022,9 +1022,9 @@ kurtosis :  540.8745184818808
 
 ![FeatureLogic.png ](FeatureLogic.png  )
 
- #### Feature Importance - Descsion Tree
+ #### Feature Importance - Decision Tree
 
- ![FeatureDescsion Tree.png ](FeatureDescsionTree.png  )
+ ![FeatureDescsion Tree.png ](FeatureDecisionTree.png  )
 
  ##Predictions
 
