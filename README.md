@@ -37,6 +37,8 @@ Enhance the bank's revenue and reputation by minimizing defaults.
 7. [Scaling](#Scaling)
 8. [Machine Learning Models](#machine-learning-models)
 9. [Predictions](#Predictions)
+10. [Conclusion](#Conclusion)
+11. [Future Scope](#FutureScope)
 # Dataset Table
 
 
@@ -1139,4 +1141,18 @@ kurtosis :  540.8745184818808
 
 ![Prediction1.png ](Prediction1.png  )
 
+<body>
+    <h1>Conclusion</h1>
+    <p>The analysis and model development have successfully demonstrated the ability to predict the likelihood of serious delinquency in the next two years using borrower profiles and historical data. The Random Forest model showed the highest accuracy and AUC, indicating its robustness for this prediction task. Key features such as RevolvingUtilizationOfUnsecuredLines, CombinedPastDue, and NumberOfTime30-59DaysPastDueNotWorse were identified as significant predictors.</p>
+     <p>
+    <h2>Future Scope</h2>
+    <p>Future work can focus on the following aspects to enhance the model's performance and applicability:</p>
+    <ul>
+        <li><strong>Feature Engineering:</strong> Further refinement and creation of new features to capture complex patterns.</li>
+        <li><strong>Model Tuning:</strong> Experimenting with hyperparameter tuning and advanced ensemble methods to improve prediction accuracy.</li>
+        <li><strong>Real-Time Prediction:</strong> Developing a real-time prediction system that can be integrated into banking applications for instant risk assessment.</li>
+        <li><strong>Explainability:</strong> Implementing techniques like SHAP values to provide more transparency and explainability to model predictions.</li>
+        <li><strong>Additional Data:</strong> Incorporating more granular data such as transaction history, employment details, and credit score changes over time for more accurate predictions.</li>
+    </ul>
+</body>
 
