@@ -390,21 +390,21 @@ kurtosis :  14370.263366125106
 skewness :  0.18619637326841987
 kurtosis :  -0.498427938670404
 
-NumberOfTime30-59DaysPastDueNotWorse
+### NumberOfTime30-59DaysPastDueNotWorse
 
 ![hist_boxplot_30_59.png](hist_boxplot_30_59.png)
 
 skewness :  22.560050047962374
 kurtosis :  520.586140091868
 
-'NumberOfTime60-89DaysPastDueNotWorse
+###  NumberOfTime60-89DaysPastDueNotWorse
 
 ![hist_boxplot_60_89.png](hist_boxplot_60_89.png)
 
 skewness :  23.393598377179494
 kurtosis :  548.632426633495
 
-'NumberOfTime90DaysPastDueNotWorse
+###  NumberOfTime90DaysLate
 
 ![hist_boxplot_90_days_late.png](hist_boxplot_90_days_late.png)
 
@@ -486,12 +486,177 @@ kurtosis :  540.8745184818808
 * **
 * *Treating outliers for the columns  -- RevolvingUtilizationOfunsecuredlines, NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate*
 
-* **Revolving Utilization of Unsecured Lines**
+* Checking for DebtRatio
 
-   ** Despite owing thousands, out of these these 187 people falling in the serious delinquency which means this might be another error.
+    <table>
+  <thead>
+    <tr>
+      <th>Debt Ratio</th>
+      <th>Value</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <td>count</td>
+      <td>120000.000000</td>
+    </tr>
+    <tr>
+      <td>mean</td>
+      <td>352.271245</td>
+    </tr>
+    <tr>
+      <td>std</td>
+      <td>2093.709509</td>
+    </tr>
+    <tr>
+      <td>min</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <td>25%</td>
+      <td>0.175330</td>
+    </tr>
+    <tr>
+      <td>50%</td>
+      <td>0.366194</td>
+    </tr>
+    <tr>
+      <td>75%</td>
+      <td>0.860833</td>
+    </tr>
+    <tr>
+      <td>max</td>
+      <td>329664.000000</td>
+    </tr>
+  </tbody>
+</table>
 
-![187.png](187.png)
+* The data is right skewed. So, we would check the potential outliers beyond 95% quantiles. However, since our data is 120,000,  we considerd 95% and 97.5% quantiles for our further analysis.
 
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>SeriousDlqin2yrs</th>
+      <th>MonthlyIncome</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>6002.000000</td>
+      <td>299.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>0.053149</td>
+      <td>0.086957</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>0.224349</td>
+      <td>0.282244</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>1.000000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+
+ Observation
+* Out of 6002 customers falling in the last 5 percentile of the data i.e. the number of times their debt is higher than their income, only 299 have Monthly Income values.
+* The Max for Monthly Income is 1 and Min is 0 which makes us wonder that are data entry errors. Checking whether the Serious Delinquency in 2 years and Monthly Income values are equal.
+
+260
+
+*There are 260 out of 299 rows where Monthly Income is equal to the Serious Delinquencies in 2 years. Hence we remove these 260 outliers from our analysis as their current values aren't useful for our predictive modelling and will add to the bias and variance.
+
+* **Age**
+
+
+<table border="1" class="dataframe">
+  <thead>
+    <tr style="text-align: right;">
+      <th></th>
+      <th>age</th>
+      <th>SeriousDlqin2yrs</th>
+    </tr>
+  </thead>
+  <tbody>
+    <tr>
+      <th>count</th>
+      <td>119740.000000</td>
+      <td>119740.000000</td>
+    </tr>
+    <tr>
+      <th>mean</th>
+      <td>52.292041</td>
+      <td>0.066970</td>
+    </tr>
+    <tr>
+      <th>std</th>
+      <td>14.778070</td>
+      <td>0.249971</td>
+    </tr>
+    <tr>
+      <th>min</th>
+      <td>0.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>25%</</th>
+      <td>41.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>50%</th>
+      <td>52.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>75%</th>
+      <td>63.000000</td>
+      <td>0.000000</td>
+    </tr>
+    <tr>
+      <th>max</th>
+      <td>109.000000</td>
+      <td>1.000000</td>
+    </tr>
+  </tbody>
+</table>
+</div>
+
+* It can be observed that the data includes a record with age = 0 which is not a valid age ,updating the record with mode age.
+* Replacing the error/odd value with the mode, that is 21.
+
+
+** NumberOfTime30-59DaysPastDueNotWorse
 
 * * The records in column 'NumberOfTime30-59DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
 
