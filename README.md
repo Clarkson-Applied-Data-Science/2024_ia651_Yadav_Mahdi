@@ -999,107 +999,20 @@ kurtosis :  540.8745184818808
 
 ![AfterScaling.png ](AfterScaling.png  )
 
+### Calculation Of Scores For Various ML models
 
-
-
-
-
-
-
-
-#### Various ML models
-
-* Training Log transformed dataset using ML algorithms**
+* Training Log transformed dataset using ML algorithms
+  
+![LOGML.png ](LOGML.png  )
 
 * Training Standaradized dataset using ML algorithms
+  
+![Standard.png ](Standard.png  )
 
-  <table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Random Forest</th>
-      <th>XGBoost</th>
-      <th>Logistic Regression</th>
-      <th>DecisionTreeClassifier</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Mean Accuracy</th>
-      <td>0.916</td>
-      <td>0.877</td>
-      <td>0.827</td>
-      <td>0.861</td>
-    </tr>
-    <tr>
-      <th>Accuracy deviation</th>
-      <td>0.006</td>
-      <td>0.012</td>
-      <td>0.011</td>
-      <td>0.006</td>
-    </tr>
-    <tr>
-      <th>Precision Macro</th>
-      <td>63.36092</td>
-      <td>60.632859</td>
-      <td>60.230852</td>
-      <td>56.45193</td>
-    </tr>
-    <tr>
-      <th>Precision Micro</th>
-      <td>89.432034</td>
-      <td>85.725734</td>
-      <td>84.547063</td>
-      <td>83.171391</td>
-    </tr>
-    <tr>
-      <th>Recall Macro</th>
-      <td>69.336656</td>
-      <td>71.725582</td>
-      <td>72.760643</td>
-      <td>63.620599</td>
-    </tr>
-    <tr>
-      <th>Recall Micro</th>
-      <td>89.432034</td>
-      <td>85.725734</td>
-      <td>84.547063</td>
-      <td>83.171391</td>
-    </tr>
-    <tr>
-      <th>F1 Score Macro</th>
-      <td>65.561259</td>
-      <td>63.127371</td>
-      <td>62.568401</td>
-      <td>57.573529</td>
-    </tr>
-    <tr>
-      <th>F1 Score Micro</th>
-      <td>89.432034</td>
-      <td>85.725734</td>
-      <td>84.547063</td>
-      <td>83.171391</td>
-    </tr>
-    <tr>
-      <th>Confusion Matrix</th>
-      <td>[[25859, 2085], [1080, 925]]</td>
-      <td>[[24560, 3384], [891, 1114]]</td>
-      <td>[[24135, 3809], [819, 1186]]</td>
-      <td>[[24086, 3858], [1182, 823]]</td>
-    </tr>
-  </tbody>
-</table>
-</div>
+### Plotting ROC AUC for the ML models for the transformed dataset**
 
-# Various ML Models
 
-![Receiver.png](Receiver.png)
+![ROCCurve.png ](ROCCurve.png  )
 
-# Using Logistic Model for Prediction
 
-![LogisticRegression.png](LogisticRegression.png)
 
-# Predictions On Scaled Data
-![Pred1.png](Pred1.png)
-
-![Pred2.png](Pred2.png)
