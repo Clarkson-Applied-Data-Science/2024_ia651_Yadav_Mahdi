@@ -831,8 +831,10 @@ kurtosis :  540.8745184818808
 * Now the event rate in the training dataset is 50%
 
 ## Scaling
- * BoxCox Transformations
+ * Log Transformation
+ * Standaradization
 
+#### Before Scaling Skewness Distribution
 <table border="1" class="dataframe">
   <thead>
     <tr style="text-align: right;">
@@ -843,238 +845,173 @@ kurtosis :  540.8745184818808
   <tbody>
     <tr>
       <th>MonthlyIncome</th>
-      <td>150.440824</td>
+      <td>152.433311</td>
     </tr>
     <tr>
       <th>MonthlyIncomePerPerson</th>
-      <td>111.019404</td>
-    </tr>
-    <tr>
-      <th>MonthlyDebt</th>
-      <td>104.775409</td>
-    </tr>
-    <tr>
-      <th>DebtRatio</th>
-      <td>103.291924</td>
-    </tr>
-    <tr>
-      <th>NumberOfTime60-89DaysPastDueNotWorse</th>
-      <td>8.754920</td>
-    </tr>
-    <tr>
-      <th>NumberOfTimes90DaysLate</th>
-      <td>8.257673</td>
-    </tr>
-    <tr>
-      <th>CombinedPastDue</th>
-      <td>8.249286</td>
-    </tr>
-    <tr>
-      <th>NumberOfTime30-59DaysPastDueNotWorse</th>
-      <td>5.156716</td>
-    </tr>
-    <tr>
-      <th>NumberRealEstateLoansOrLines</th>
-      <td>3.764830</td>
-    </tr>
-    <tr>
-      <th>isRetired</th>
-      <td>2.556428</td>
-    </tr>
-    <tr>
-      <th>NumberOfDependents</th>
-      <td>1.411704</td>
-    </tr>
-    <tr>
-      <th>hasMultipleRealEstates</th>
-      <td>1.348802</td>
-    </tr>
-    <tr>
-      <th>RevolvingLines</th>
-      <td>1.275148</td>
-    </tr>
-    <tr>
-      <th>CombinedCreditLoans</th>
-      <td>1.115022</td>
-    </tr>
-    <tr>
-      <th>NumberOfOpenCreditLinesAndLoans</th>
-      <td>1.108239</td>
+      <td>114.755089</td>
     </tr>
     <tr>
       <th>RevolvingUtilizationOfUnsecuredLines</th>
-      <td>0.747770</td>
+      <td>100.658816</td>
     </tr>
     <tr>
-      <th>hasRevolvingLines</th>
-      <td>-4.122311</td>
+      <th>MonthlyDebt</th>
+      <td>99.344320</td>
+    </tr>
+    <tr>
+      <th>DebtRatio</th>
+      <td>97.872765</td>
+    </tr>
+    <tr>
+      <th>NumberOfTime60-89DaysPastDueNotWorse</th>
+      <td>8.735995</td>
+    </tr>
+    <tr>
+      <th>NumberOfTimes90DaysLate</th>
+      <td>8.264560</td>
+    </tr>
+    <tr>
+      <th>CombinedPastDue</th>
+      <td>8.219034</td>
+    </tr>
+    <tr>
+      <th>NumberOfTime30-59DaysPastDueNotWorse</th>
+      <td>5.121509</td>
+    </tr>
+    <tr>
+      <th>NumberRealEstateLoansOrLines</th>
+      <td>3.598986</td>
+    </tr>
+    <tr>
+      <th>isRetired</th>
+      <td>2.558783</td>
+    </tr>
+    <tr>
+      <th>NumberOfDependents</th>
+      <td>1.412255</td>
+    </tr>
+    <tr>
+      <th>hasMultipleRealEstates</th>
+      <td>1.347083</td>
+    </tr>
+    <tr>
+      <th>RevolvingLines</td>
+      <td>1.280191</td>
+    </tr>
+    <tr>
+      <th>NumberOfOpenCreditLinesAndLoans</td>
+      <td>1.111764</td>
+    </tr>
+    <tr>
+      <th>CombinedCreditLoans</td>
+      <td>1.108994</td>
+    </tr>
+    <tr>
+      <th>hasRevolvingLines</td>
+      <td>-4.170414</td>
     </tr>
   </tbody>
 </table>
 </div>
 
-
+#### After Scaling Skewness Distribution
 
 <table border="1" class="dataframe">
   <thead>
-    <tr style="text-align: right;">
-      <th></th>
+    <tr>
+      <th>Index</th>
       <th>skew</th>
     </tr>
   </thead>
   <tbody>
     <tr>
-      <th>NumberOfTime60-89DaysPastDueNotWorse</th>
-      <td>4.644356</td>
+      <td>RevolvingUtilizationOfUnsecuredLines</td>
+      <td>10.123458</td>
     </tr>
     <tr>
-      <th>NumberOfTimes90DaysLate</th>
-      <td>3.765594</td>
+      <td>NumberOfTime60-89DaysPastDueNotWorse</td>
+      <td>4.190228</td>
     </tr>
     <tr>
-      <th>isRetired</th>
-      <td>2.556428</td>
+      <td>NumberOfTimes90DaysLate</td>
+      <td>3.325071</td>
     </tr>
     <tr>
-      <th>NumberOfTime30-59DaysPastDueNotWorse</th>
-      <td>2.103570</td>
+      <td>isRetired</td>
+      <td>2.558783</td>
     </tr>
     <tr>
-      <th>DebtRatio</th>
-      <td>2.103448</td>
+      <td>DebtRatio</td>
+      <td>1.895761</td>
     </tr>
     <tr>
-      <th>MonthlyDebt</th>
-      <td>1.921552</td>
+      <td>NumberOfTime30-59DaysPastDueNotWorse</td>
+      <td>1.858490</td>
     </tr>
     <tr>
-      <th>CombinedPastDue</th>
-      <td>1.857779</td>
+      <td>CombinedPastDue</td>
+      <td>1.445872</td>
     </tr>
     <tr>
-      <th>hasMultipleRealEstates</th>
-      <td>1.348802</td>
+      <td>hasMultipleRealEstates</td>
+      <td>1.347083</td>
     </tr>
     <tr>
-      <th>NumberOfDependents</th>
-      <td>0.788863</td>
+      <td>MonthlyDebt</td>
+      <td>0.740007</td>
     </tr>
     <tr>
-      <th>NumberRealEstateLoansOrLines</th>
-      <td>0.668400</td>
+      <td>NumberOfDependents</td>
+      <td>0.715397</td>
     </tr>
     <tr>
-      <th>NumberOfOpenCreditLinesAndLoans</th>
-      <td>-0.573041</td>
+      <td>NumberRealEstateLoansOrLines</td>
+      <td>0.504881</td>
     </tr>
     <tr>
-      <th>CombinedCreditLoans</th>
-      <td>-0.617103</td>
+      <td>RevolvingLines</td>
+      <td>-0.763235</td>
     </tr>
     <tr>
-      <th>MonthlyIncomePerPerson</th>
-      <td>-1.287085</td>
+      <td>NumberOfOpenCreditLinesAndLoans</td>
+      <td>-0.885374</td>
     </tr>
     <tr>
-      <th>MonthlyIncome</th>
-      <td>-1.970267</td>
+      <td>CombinedCreditLoans</td>
+      <td>-0.934095</td>
     </tr>
     <tr>
-      <th>hasRevolvingLines</th>
-      <td>-4.122311</td>
+      <td>MonthlyIncomePerPerson</td>
+      <td>-3.747514</td>
+    </tr>
+    <tr>
+      <td>hasRevolvingLines</td>
+      <td>-4.170414</td>
+    </tr>
+    <tr>
+      <td>MonthlyIncome</td>
+      <td>-5.001298</td>
     </tr>
   </tbody>
 </table>
-</div>
 
 
 ![AfterScaling.png ](AfterScaling.png  )
 
 
+
+
+
+
+
+
+
 #### Various ML models
 
-* **Training Box Cox transformed dataset using ML algorithms**
+* Training Log transformed dataset using ML algorithms**
 
-<table border="1" class="dataframe">
-  <thead>
-    <tr style="text-align: right;">
-      <th></th>
-      <th>Random Forest</th>
-      <th>XGBoost</th>
-      <th>Logistic Regression</th>
-      <th>DecisionTreeClassifier</th>
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <th>Mean Accuracy</th>
-      <td>0.917</td>
-      <td>0.877</td>
-      <td>0.794</td>
-      <td>0.861</td>
-    </tr>
-    <tr>
-      <th>Accuracy deviation</th>
-      <td>0.006</td>
-      <td>0.012</td>
-      <td>0.003</td>
-      <td>0.005</td>
-    </tr>
-    <tr>
-      <th>Precision Macro</th>
-      <td>63.247444</td>
-      <td>60.990873</td>
-      <td>58.906125</td>
-      <td>56.526875</td>
-    </tr>
-    <tr>
-      <th>Precision Micro</th>
-      <td>89.422017</td>
-      <td>86.113059</td>
-      <td>78.573575</td>
-      <td>83.268223</td>
-    </tr>
-    <tr>
-      <th>Recall Macro</th>
-      <td>69.053508</td>
-      <td>72.002585</td>
-      <td>76.480959</td>
-      <td>63.718785</td>
-    </tr>
-    <tr>
-      <th>Recall Micro</th>
-      <td>89.422017</td>
-      <td>86.113059</td>
-      <td>78.573575</td>
-      <td>83.268223</td>
-    </tr>
-    <tr>
-      <th>F1 Score Macro</th>
-      <td>65.396903</td>
-      <td>63.585683</td>
-      <td>59.467669</td>
-      <td>57.679214</td>
-    </tr>
-    <tr>
-      <th>F1 Score Micro</th>
-      <td>89.422017</td>
-      <td>86.113059</td>
-      <td>78.573575</td>
-      <td>83.268223</td>
-    </tr>
-    <tr>
-      <th>Confusion Matrix</th>
-      <td>[[25868, 2076], [1092, 913]]</td>
-      <td>[[24673, 3271], [888, 1117]]</td>
-      <td>[[22047, 5897], [520, 1485]]</td>
-      <td>[[24113, 3831], [1180, 825]]</td>
-    </tr>
-  </tbody>
-</table>
-</div>
-
-
-* ** Training Standaradized dataset using ML algorithms
+* Training Standaradized dataset using ML algorithms
 
   <table border="1" class="dataframe">
   <thead>
