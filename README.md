@@ -1,8 +1,28 @@
+<body>
+    <div class="project-info" style="max-width: 600px; margin: 40px auto; padding: 20px; background-color: #3a3a3a; border-radius: 10px; box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #ffffff;">
+        <h1 style="font-size: 28px; font-weight: bold; margin-bottom: 20px; text-align: center; color: #ffcc00;">Final Project</h1>
+        <div class="presented-by" style="margin-bottom: 20px;">
+            <strong style="display: block; font-size: 18px; margin-bottom: 10px; color: #ffcc00;">Presented By:</strong>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px; font-size: 16px;">Dheeraj Yadav</li>
+                <li style="margin-bottom: 10px; font-size: 16px;">Sayed Mohd Mahdi</li>
+            </ul>
+        </div>
+        <div class="guided-by">
+            <strong style="display: block; font-size: 18px; margin-bottom: 10px; color: #ffcc00;">Guided By:</strong>
+            <ul style="list-style-type: none; padding-left: 0;">
+                <li style="margin-bottom: 10px; font-size: 16px;">Professor Michael Gilbert</li>
+                <li style="margin-bottom: 10px; font-size: 16px;">G.A. Nisar Ahamad Killedar</li>
+            </ul>
+        </div>
+    </div>
+</body>
+
 # Analysis On Default Credit Case Study
 
 
 ***
-## Business Context - Banks primarily thrive on their money lending business. The more efficiently they can lend to individuals who repay with good interest, the better their revenue.
+### Business Context - Banks primarily thrive on their money lending business. The more efficiently they can lend to individuals who repay with good interest, the better their revenue.
 * **
 
 
