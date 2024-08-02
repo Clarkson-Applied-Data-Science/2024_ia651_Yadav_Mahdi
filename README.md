@@ -40,7 +40,7 @@ Enhance the bank's revenue and reputation by minimizing defaults.
 7. [Scaling](#Scaling)
 8. [Machine Learning Models](#machine-learning-models)
 9. [Predictions](#Predictions)
-# Dataset
+# Dataset Table
 
 
 <table border="1" class="dataframe">
@@ -205,7 +205,6 @@ Enhance the bank's revenue and reputation by minimizing defaults.
 </table>
 </div>
 
-* This dataset was collected from dataworld.com
 
 # Exploratory Data Analysis: 
 
@@ -372,14 +371,14 @@ y = df['SeriousDlqin2yrs']
 ```
 
 ## Shape of Train Dataset , Test Dataset
- ###   (120000, 11) , (30000, 11)
+ ###   [ 120000, 11 ] | [ 30000, 11 ]
 
 
 ## Univariate Analysis using Training Numerical Dataset
 
 
 
-
+![DebtRatio.png](DebtRatio.png)
 
     
 ![RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png](RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png)
