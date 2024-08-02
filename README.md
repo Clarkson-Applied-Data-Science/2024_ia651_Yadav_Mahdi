@@ -484,7 +484,7 @@ kurtosis :  540.8745184818808
 * **
 * *In the columns NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate, we see delinquency range beyond 90 which is common across all 3 features.*
 * **
-* *Treating outliers for the columns  -- RevolvingUtilizationOfunsecuredlines, NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate*
+* *Treating outliers for the columns  --Debt Ratio, Age,  NumberOfTime30-59DaysPastDueNotWorse, NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate*
 
 * Checking for DebtRatio
 
@@ -594,7 +594,7 @@ kurtosis :  540.8745184818808
 
 260
 
-*There are 260 out of 299 rows where Monthly Income is equal to the Serious Delinquencies in 2 years. Hence we remove these 260 outliers from our analysis as their current values aren't useful for our predictive modelling and will add to the bias and variance.
+* There are 260 out of 299 rows where Monthly Income is equal to the Serious Delinquencies in 2 years. Hence we remove these 260 outliers from our analysis as their current values aren't useful for our predictive modelling and will add to the bias and variance.
 
 ###    AGE
 
@@ -656,26 +656,27 @@ kurtosis :  540.8745184818808
 
 ###    NumberOfTime30-59, 60-89, 90DaysPastDueNotWorse
 
-* * The records in column 'NumberOfTime30-59, 60-89, 90DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
+* The records in column 'NumberOfTime30-59, 60-89, 90DaysPastDueNotWorse' are more than 90, the other columns that records number of times payments are past due X days also have the same values.
 
 ![Uniquevalues.png](Uniquevalues.png)
 
 * **
-* *Replacing them with the maximum value before 96 i.e. 12, 11 and 17*
+* Replacing them with the maximum value before 96 i.e. 12, 11 and 17*
 
 
 ![abc.png](abc.png)
 
 #### Missing Value Treatment  
-* *Since MonthlyIncome is an integer value, replacing the nulls with the median values instead of mean as it was heavily right skewed.*
-* *Number of Dependents filling by mode which is 0.
 
-  * **Correlation Plot**
+* Since MonthlyIncome is an integer value, replacing the nulls with the median values instead of mean as it was heavily right skewed.*
+* Number of Dependents filling by mode which is 0.
+
+### Correlation Matrix Analysis 
  
-    ![Corelatiom.png](Corelation.png)
+   ![Corelatiom.png](Corelation.png)
  
-  * * From the correlation heatmap above, we can see the most correlated values to SeriousDlqin2yrs are NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate.
-* **
+* From the correlation heatmap above, we can see the most correlated values to SeriousDlqin2yrs are NumberOfTime30-59DaysPastDueNotWorse , NumberOfTime60-89DaysPastDueNotWorse and NumberOfTimes90DaysLate.
+
 * Number of Open Credit Lines and Loans and Number of Real Estate Loans or Lines also have a significant correlation
 
 ### Bivariate Analysis
