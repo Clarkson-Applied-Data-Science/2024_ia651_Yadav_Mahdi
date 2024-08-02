@@ -1013,8 +1013,23 @@ kurtosis :  540.8745184818808
 
 ![ROCCurve.png ](ROCCurve.png  )
 
- #### Feature Importance
+ #### Feature Importance - Random Forest
 
    
 ![FeatureImportance.png ](FeatureImportance.png  )
 
+ #### Feature Importance - Logistic Regression
+
+![FeatureLogic.png ](FeatureLogic.png  )
+
+ #### Feature Importance - Descsion Tree
+
+ ![FeatureDescsion Tree.png ](FeatureDescsionTree.png  )
+
+ ##Predictions
+
+![Prediction1.png ](Prediction1.png  )
+
+
+
+![Prediction2.png ](Prediction2.png  )
