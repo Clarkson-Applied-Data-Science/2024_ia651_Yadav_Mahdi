@@ -13,9 +13,6 @@
 Identify borrowers likely to face serious delinquency.
 Enhance the bank's revenue and reputation by minimizing defaults.
 * **
-* * **Delinquent** in general is a slightly mild term where a borrower is not repaying charges and is behind by certain months whereas
-* * **Default** is a term where a borrower has not been able to pay charges and is behind for a long period of months and is unlikely to repay the charges.
-* **
 * We have a general profile about the borrower such as age, Monthly Income, Dependents and the historical data such as what is the Debt Ratio, what ratio of amount is owed wrt credit limit, and the no of times defaulted in the past one, two, three months.
 * We will be using all these features to predict whether the borrower is likely to delinquent in the next 2 years or not.
 * These kind of predictions will help banks to take necessary actions.
@@ -996,6 +993,18 @@ kurtosis :  540.8745184818808
   </tbody>
 </table>
 
+<body>
+    <h1>Density Plots of Features</h1>
+    <p>
+        This image displays the density plots for various features in the dataset.
+    </p>
+    <ul>
+        <li>Features include <strong>RevolvingUtilizationOfUnsecuredLines</strong>, <strong>age</strong>, <strong>NumberOfTime30-59DaysPastDueNotWorse</strong>, among others.</li>
+        <li>The density plots help visualize the distribution of each feature.</li>
+        <li>Many features exhibit skewed distributions, indicating potential outliers or non-normal distributions.</li>
+        <li>Features like <strong>MonthlyIncome</strong> and <strong>NumberOfDependents</strong> show high variance.</li>
+    </ul>
+</body>
 
 ![AfterScaling.png ](AfterScaling.png  )
 
