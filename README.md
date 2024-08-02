@@ -376,27 +376,35 @@ y = df['SeriousDlqin2yrs']
 
 ## Univariate Analysis using Training Numerical Dataset
 
-
+### DebtRatio
 
 ![DebtRatio.png](DebtRatio.png)
 
+skewness :  99.14282373943726
+kurtosis :  14370.263366125106
+
+###       AGE
     
-![RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png](RevolvingUtilizationOfUnsecuredLines_hist_boxplot.png)
+![Age.png](Age.png)
 
-skewness :  100.53820302006339
-kurtosis :  15559.574874151434
+skewness :  0.18619637326841987
+kurtosis :  -0.498427938670404
 
+NumberOfTime30-59DaysPastDueNotWorse
 
 ![hist_boxplot_30_59.png](hist_boxplot_30_59.png)
 
 skewness :  22.560050047962374
 kurtosis :  520.586140091868
 
+'NumberOfTime60-89DaysPastDueNotWorse
 
 ![hist_boxplot_60_89.png](hist_boxplot_60_89.png)
 
 skewness :  23.393598377179494
 kurtosis :  548.632426633495
+
+'NumberOfTime90DaysPastDueNotWorse
 
 ![hist_boxplot_90_days_late.png](hist_boxplot_90_days_late.png)
 
