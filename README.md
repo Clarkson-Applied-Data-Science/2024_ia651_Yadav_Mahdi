@@ -816,7 +816,7 @@ kurtosis :  540.8745184818808
 
 #### Upsampling
 
-![Up.png ](Up.png  )
+![Upsampling.png ](Upsampling.png )
 
 #### Downsampling
 
