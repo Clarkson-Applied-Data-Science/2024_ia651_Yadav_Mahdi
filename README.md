@@ -1011,8 +1011,10 @@ kurtosis :  540.8745184818808
 
 ### Plotting ROC AUC for the ML models for the transformed dataset**
 
-
 ![ROCCurve.png ](ROCCurve.png  )
 
+ #### Feature Importance
 
+   
+![FeatureImportance.png ](FeatureImportance.png  )
 
