@@ -1131,7 +1131,8 @@ kurtosis :  540.8745184818808
         </ul>
     </p>
 </body>
- ![FeatureDescsion Tree.png ](FeatureDecisionTree.png  )
+
+![FeatureDecisionTree.png  ](FeatureDecisionTree.png   )
 
 <body>
     <h1>Prediction Probabilities</h1>
