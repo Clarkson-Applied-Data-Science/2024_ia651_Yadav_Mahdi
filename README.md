@@ -1177,3 +1177,17 @@ kurtosis :  540.8745184818808
     </ul>
 </body>
 
+<body>
+    <h1>Production Guidelines</h1>
+    <h2>Steps:</h2>
+    <ul>
+        <li>Clone the project repository.</li>
+        <li>Install all necessary dependencies.</li>
+        <li>Load the training dataset.</li>
+        <li>Perform data cleaning and preprocessing on the training dataset.</li>
+        <li>Load the testing dataset.</li>
+        <li>Perform data cleaning and preprocessing on the testing dataset.</li>
+        <li>Train the machine learning models.</li>
+        <li>Evaluate the performance of the models.</li>
+    </ul>
+</body>
